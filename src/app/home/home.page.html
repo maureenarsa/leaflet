@@ -21,18 +21,15 @@
 
     <!-- Legend Container -->
     <div class="legend-container" style="margin-top: 10px;">
-      <div class="legend-title" style="font-weight: bold; margin-bottom: 5px;">Legenda Cuaca</div>
+      <div class="legend-title" style="font-weight: bold; margin-bottom: 5px;">Legenda</div>
       <div class="legend-item" style="display: flex; align-items: center; margin-bottom: 5px;">
-        <img src="https://cdn-icons-png.flaticon.com/128/1163/1163763.png" alt="Cerah Berawan" class="legend-icon" style="width: 20px; height: 20px; margin-right: 5px;" />
-        <div class="legend-text">Cerah Berawan</div>
+        <img src="https://cdn-icons-png.flaticon.com/128/1032/1032989.png" alt="Ambulance" class="legend-icon" style="width: 20px; height: 20px; margin-right: 5px;" />
+        <div class="legend-text">Ambulan</div>
       </div>
+      <!-- Legend for Ambulance Route -->
       <div class="legend-item" style="display: flex; align-items: center; margin-bottom: 5px;">
-        <img src="https://cdn-icons-png.flaticon.com/128/1163/1163759.png" alt="Hujan Ringan" class="legend-icon" style="width: 20px; height: 20px; margin-right: 5px;" />
-        <div class="legend-text">Hujan Ringan</div>
-      </div>
-      <div class="legend-item" style="display: flex; align-items: center; margin-bottom: 5px;">
-        <img src="https://cdn-icons-png.flaticon.com/128/1146/1146799.png" alt="Hujan Lebat" class="legend-icon" style="width: 20px; height: 20px; margin-right: 5px;" />
-        <div class="legend-text">Hujan Lebat</div>
+        <div class="legend-line" style="width: 20px; height: 3px; background-color: blue; margin-right: 5px;"></div>
+        <div class="legend-text">Rute Ambulan</div>
       </div>
     </div>
   </div> <!-- End basemap-legend-container -->
@@ -84,6 +81,13 @@
     margin-right: 10px;
   }
 
+  .legend-line {
+    width: 20px;
+    height: 3px;
+    background-color: blue;
+    margin-right: 10px;
+  }
+
   .legend-text {
     font-size: 14px;
   }
@@ -121,7 +125,6 @@
   ion-item {
     --background: transparent;
   }
-
 
   /* Responsive styles */
   @media screen and (max-width: 768px) {
